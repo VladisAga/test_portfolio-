@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    scroll-behavior: smooth;
+}
+
+.header {
+    max-width: 1920px;
+    background-image: url('/public/image/header-background.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    position: relative;
+    padding: 190px 0 0 135px;
+    margin-bottom: 126px;
+    overflow: hidden;
+
+    &__social-block {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        transform-origin: top right;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 224px;
+        left: -275px;
+    }
+
+    &__social-dash {
+        border-top: 2px solid black;
+        width: 70px;
+        padding-bottom: 2px;
+    }
+
+    &__social-img-box {
+        display: flex;
+        gap: 15px;
+    }
+
+    &_social-img {
+        width: 20px;
+    }
+
+    &__main-inf {
+        position: relative;
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    &_color-ball {
+        width: 36px;
+        height: 36px;
+    }
+
+    &__my-name {
+        padding: 10px 0 15px 10px;
+        position: relative;
+    }
+
+    &__topic {
+        max-width: 532px;
+        font-size: 48px;
+        margin-bottom: 38px;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 19px;
+        padding-bottom: 365px;
+    }
+
+    &__link-box {
+        font-size: 14px;
+
+
+        &_first-link {
+            background-color: rgb(255, 165, 1);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    &__link {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        padding: 12px 25px;
+    }
+
+    &__burger {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        cursor: pointer;
+    }
+
+    &__menu-burger-item {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .header__menu-burger-item:hover {
+        text-decoration: underline;
+    }
+
+    &__close-burger {
+        position: absolute;
+        top: 24px;
+        left: 290px;
+        cursor: pointer;
+    }
+
+    &__menu-burger {
+        position: absolute;
+        transform: translateX(-100%);
+        transition: transform 0.2s;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.75);
+
+        ul {
+            padding: 140px 0 0 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height: 100%;
+            max-width: 345px;
+            background: rgb(255, 165, 1);
+            list-style: none;
+
+            li::before {
+                content: url('/public/image/Ellipse.png');
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                padding-right: 20px;
+            }
+        }
+    }
+
+    &__menu-burger-social {
+        display: flex;
+        gap: 15px;
+        position: absolute;
+        left: 128px;
+        bottom: 51px;
+        transform: translate(0, 50%);
+
+        a {
+            width: 20px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .show-menu {
+        transform: translateX(0);
+    }
+}
+
+.main {
+    max-width: 1053px;
+    margin: 0 auto;
+
+    &__experience {
+        padding-bottom: 120px;
+        max-width: 994px;
+        margin: 0 auto;
+    }
+
+    &__experience-block {
+        position: relative;
+    }
+
+    &__experience-information {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 67px;
+        flex-wrap: wrap;
+    }
+}
+
+.topic-of-block {
+    max-width: 365px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &_color-ball {
+        width: 36px;
+        height: 36px;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -25%);
+    }
+
+    &__topic {
+        font-size: 36px;
+        margin-top: 20px;
+    }
+
+    &__divider {
+        width: 60px;
+        border-top: 3px solid rgb(255, 165, 1);
+        margin-top: 23.5px;
+    }
+}
+
+.experience-section {
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+    &_second-sectioon {
+        margin-right: 13px;
+    }
+
+    &_second-elem {
+        margin-top: 25px;
+    }
+
+    &_color-ball {
+        width: 15px;
+        height: 15px;
+    }
+
+    &__topic-area {
+        display: flex;
+        gap: 27px;
+        align-items: center;
+    }
+
+    &__ball-box {
+        position: relative;
+        width: 15px;
+        height: 15px;
+        background-color: white;
+        transform: translate(-54%);
+        border-top: 10px solid white;
+        box-sizing: unset;
+        top: -5px
+    }
+
+    &__topic {
+        font-size: 20px;
+    }
+
+    &__elem {
+
+        &_color-ball {
+            width: 36px;
+            height: 36px;
+        }
+    }
+
+    &__elem-topic {
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__line {
+        width: 42px;
+        height: 1px;
+        background-color: black;
+    }
+
+    &__ball-box-img {
+        position: relative;
+        width: 36px;
+        height: 36px;
+        margin-right: 20px;
+
+        img {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+        }
+    }
+
+    &__elem-topic-text {
+        line-height: 1;
+    }
+
+    &__topic-education {
+        font-size: 14px;
+    }
+
+    &__topic-education-name {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    &__main-text {
+        margin: 12px 0 0 42.5px;
+        font-weight: 500;
+        font-size: 12px;
+        max-width: 375px;
+    }
+}
+
+.main {
+    &__contact-section {
+        max-width: 1053px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 91px;
+    }
+
+    &__contact-section-img-box {
+        max-width: 400px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__contact-inf {
+        padding: 0 10px;
+    }
+
+    &__contact-link-box {}
+
+    &__contact-links {
+        display: flex;
+        gap: 25px;
+        margin-left: 2px;
+    }
+
+    &__image-svg-box {
+        width: 30px;
+        margin-top: 22px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__form-section {
+        max-width: 585px;
+    }
+
+    &__form {
+        margin-top: 30px;
+
+        .error-text {
+            color: red;
+            position: absolute;
+            left: 0;
+            bottom: -16px;
+            font-size: 12px;
+        }
+    }
+
+    &__form-name-email {
+        display: flex;
+        gap: 25px;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+    }
+
+    &__inputData {
+        position: relative;
+        flex: 1;
+        width: 280px;
+
+        label {
+            position: absolute;
+            font-size: 12px;
+            font-weight: 500;
+            background-color: white;
+            left: 12px;
+            padding: 0 8px;
+            transform: translate(0, -50%);
+        }
+
+        input {
+            font-size: 12px;
+            font-weight: 500;
+            border: 1px solid black;
+            width: 100%;
+            padding: 14px 20px;
+
+            &::placeholder {
+                font-size: 12px;
+                font-weight: 500;
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+
+    &__agree-block {
+        max-width: 180px;
+        align-items: center;
+        gap: 10px;
+        margin: 0 auto;
+        display: none;
+        font-size: 12px;
+        margin-bottom: 5px;
+
+        input {
+            border: 1px solid black;
+            border-radius: 0;
+        }
+    }
+
+    &__agree-block-text {
+        font-weight: 500;
+        margin-right: 25px;
+        line-height: 1.4;
+
+        span {
+            font-weight: 500;
+            color: rgb(35, 6, 214);
+        }
+    }
+
+    &__error-input-text {}
+
+    &__form-textarea {
+        position: relative;
+        margin-bottom: 24px;
+
+        label {
+            position: absolute;
+            font-size: 12px;
+            font-weight: 500;
+            background-color: white;
+            left: 12px;
+            padding: 0 8px;
+            transform: translate(0, -50%);
+        }
+
+        textarea {
+            width: 100%;
+            border: 1px solid black;
+            resize: none;
+            min-height: 190px;
+            padding: 14px 20px;
+            font-size: 12px;
+            font-weight: 500;
+            min-width: 300px;
+        }
+    }
+
+    &__form-sub-btn {
+
+        input {
+            font-size: 14px;
+            background: transparent;
+            border: none;
+            background-color: rgb(255, 165, 1);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+            width: auto;
+            height: 45px;
+            padding: 0 26px;
+            cursor: pointer;
+            max-width: 219px;
+            text-align: center;
+        }
+    }
+}
+
+.topic-of-block {
+
+    &_contact-sec {
+        align-items: flex-start;
+        position: relative;
+        margin: 8px 0 0;
+    }
+
+    &_color-ball_contact-inf {
+        left: 20px;
+    }
+
+    &__divider_contact-inf {
+        margin: 7px 0 0 3px;
+    }
+}
+
+.topic-of-block-in-contact {
+    font-size: 14px;
+    margin-top: 21px;
+}
+
+
+.color-ball-and-text {
+    &__text {
+        position: relative;
+    }
+
+    &__text_contact-sec {
+        margin-left: 12px;
+    }
+}
+
+.color-ball {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(255, 165, 1);
+}
+
+@media all and (max-width: 1000px) {
+
+    .main {
+        &__contact-section {
+            justify-content: center;
+        }
+
+        &__contact-section-img-box {
+            display: none;
+        }
+    }
+}
+
+@media all and (max-width: 884px) {
+    .main__experience-information {
+        justify-content: center;
+        gap: 57px;
+        padding: 67px 20px 0;
+    }
+
+    .experience-section {
+
+        &_second-sectioon {
+            margin-right: 0;
+        }
+    }
+}
+
+
+@media all and (max-width: 636px) {
+
+    .header {
+        padding: 194px 20px 0 10px;
+
+        &__social-block {
+            display: none;
+        }
+
+        &__topic {
+            line-height: 1.4;
+        }
+
+    }
+}
+
+@media all and (max-width: 600px) {
+    .main {
+        &__form-name-email {
+            flex-direction: column;
+
+            input {
+                min-width: 300px;
+            }
+        }
+
+        &__form-textarea {
+            margin-bottom: 14px;
+
+            textarea {
+                max-width: 300px;
+                min-height: 143px;
+            }
+        }
+
+        &__form-sub-btn {
+            margin-left: 40px;
+        }
+
+        &__agree-block {
+            display: flex;
+        }
+    }
+
+    .main__form-name-email {
+        gap: 32px;
+    }
+
+    .header__menu-burger {
+        ul {
+            padding-left: 20px;
+            max-width: 250px;
+        }
+    }
+
+    .header__menu-burger-social {
+        left: 80px;
+    }
+
+    .header__close-burger {
+        left: 196px;
+    }
+
+}
+
+@media all and (max-width: 492px) {
+    .header {
+        background-image: url('/public/image/Background-320px.png');
+
+        &__topic {
+            font-size: 26px;
+            margin-bottom: 32px;
+        }
+
+        &__nav {
+            padding-bottom: 247px;
+        }
+    }
+
+    .topic-of-block__topic {
+        margin-top: 30px;
+    }
+
+    .topic-of-block__divider {
+        margin: 16.5px 0 4px;
+    }
+
+    .experience-section__main-text {
+        margin-left: 35px;
+        line-height: 1.5;
+    }
+
+    .experience-section_second-elem {
+        margin-top: -30px;
+    }
+}
+
+@media all and (max-width: 360px) {
+    .header__burger-menu {
+        top: 14px;
+        right: 20px;
+    }
+
+    .main__experience-information {
+        padding-top: 40px;
+    }
+
+    .topic-of-block {
+
+        &__topic {
+            font-size: 24px;
+        }
+    }
+
+}
